@@ -1,0 +1,363 @@
+@media screen and (max-width: 1650px) {
+  .display-box {
+    width: 24.8vw;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  .utility-bar {
+    height: 23vh;
+  }
+
+  .utility-inputs {
+    width: 100%;
+    height: 12vh;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .dropdown {
+    height: 5vh;
+    margin-bottom: 1vh;
+  }
+
+  .utility-buttons {
+    height: 5vh;
+  }
+
+  .display-details {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .display-box {
+    width: 33vw;
+  }
+  .info-internal-container h2 {
+    font-size: 1.2em;
+  }
+
+  .info-internal-container p {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .options-internal-container p {
+    font-size: 1.3em;
+  }
+
+  .options-icon {
+    height: 135px;
+    width: 135px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .dialog-internal-container {
+    width: 70vw;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .options-internal-container p {
+    font-size: 1.15em;
+  }
+
+  .dropdown-content {
+    width: 60vw;
+  }
+
+  .options-icon {
+    height: 120px;
+    width: 120px;
+  }
+
+  .info-internal-container p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .display-box {
+    width: 49.5vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard-options {
+    height: 90vh;
+    width: 47vw;
+    flex-flow: wrap;
+  }
+
+  .dashboard-options-container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #dashboardInformation {
+    margin: 1vh 1vw 1vh 2vw;
+    justify-content: flex-start;
+  }
+
+  #dashboardUtilities {
+    margin: 1vh 2vw 1vh 1vw;
+    justify-content: flex-end;
+  }
+
+  .info-box, .info-box-b {
+    height: 20%;
+    min-width: 100%;
+  }
+
+  .options-box {
+    height: 33.3333333333%;
+    min-width: 100%;
+  }
+
+  .info-box-b::before, .info-box-b::after {
+    display: none;
+  }
+
+  #configureDisplay::before, #configureDisplay::after {
+    display: none;
+  }
+
+  .info-internal-container h2 {
+    font-size: 1.5em;
+  }
+
+  .info-internal-container p {
+    font-size: 2.5em;
+  }
+
+  .file-display {
+    flex-direction: column;
+    height: 170vh;
+  }
+
+  .file-list-window {
+    width: 96vw;
+    height: 55vh;
+  }
+
+  .dialog-internal-container {
+    width: 80vw;
+  }
+
+  .input-box {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .display-box {
+    width: 100vw;
+  }
+
+  .display-details {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    height: 45px;
+    width: 160px;
+    padding-top: 3px;
+  }
+
+  .dropdown p {
+    font-size: 1.4em;
+  }
+
+  .dropdown-content {
+    width: 70vw;
+  }
+
+  .e-button {
+    font-size: 1.3em;
+  }
+
+  .info-internal-container h2 {
+    font-size: 1.3em;
+  }
+
+
+  .info-internal-container p {
+    margin: 0.6em 0 0.6em 0;
+  }
+
+  .text-container p {
+    font-size: 1.1em;
+  }
+
+  .dialog-internal-container {
+    width: 95vw;
+    height: 35vh;
+  }
+
+  form p {
+    font-size: 1.3em;
+  }
+
+  .input-box {
+    width: 40vw;
+  }
+
+  .display-details {
+    font-size: 1.3em;
+  }
+
+  .display-details input {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #pageTitle h1 {
+    font-size: 2em;
+    padding: 15px;
+    margin: 0;
+  }
+
+  #logo {
+    height: 40px;
+    width: 140px;
+    padding-top: 5px;
+  }
+
+  #messageContainer p {
+    font-size: 1.5em;
+  }
+
+  .menu-navigation {
+    width: 100%;
+  }
+
+  .dropdown p {
+    font-size: 1.1em;
+  }
+
+  .options-internal-container p {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+  }
+
+  .info-internal-container p {
+    font-size: 2em;
+  }
+
+  .text-container p {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  #logo {
+    height: 35px;
+    width: 130px;
+    padding-top: 8px;
+  }
+
+  .options-icon {
+    height: 115px;
+    width: 115px;
+  }
+
+  .btn {
+    font-size: 1.3em;
+  }
+
+  .file-display h2 {
+    font-size: 1.7em;
+  }
+  .button-container {
+    height: 100%;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  .dialog-internal-container {
+    height: 45vh;
+  }
+
+  form p {
+    font-size: 1.2em;
+  }
+
+  .input-box {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .options-icon {
+    height: 105px;
+    width: 105px;
+  }
+
+  .options-internal-container p {
+    font-size: 1.1em;
+    margin: 10px 0 0 0;
+  }
+
+  .info-internal-container h2 {
+    font-size: 1em;
+  }
+
+  .info-internal-container p {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .options-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .options-internal-container p {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+  }
+
+  .box-internal-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .display-details {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .dialog-internal-container {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .dialog-text h1 {
+    font-size: 1.8em;
+  }
+
+  .dialog-internal-container {
+    height: 55vh;
+  }
+}

@@ -1,0 +1,24 @@
+#messageContainer {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#messageContainer h1 {
+  margin: 30px;
+  display: inline-flex;
+  font-size: 3em;
+  color: #621360;
+}
+
+#messageContainer p {
+  margin: 5px;
+  display: inline-flex;
+  font-size: 2em;
+  color: #000;
+}

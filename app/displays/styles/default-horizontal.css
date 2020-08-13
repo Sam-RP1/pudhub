@@ -1,0 +1,160 @@
+/*-------------------------------------------*\
+   default-horizontal.css
+
+   Default Horizontal
+   - Containers
+   - Text
+   - Media
+   - General
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+.default-header-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 80px;
+  top: 0;
+  align-items: center;
+  background-color: #3c023c;
+}
+
+.default-display-header {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 80px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c023c;
+}
+
+.default-header-internal {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.default-box-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  margin: 0;
+  flex-flow: wrap;
+}
+
+.box-wrapper {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 50%;
+}
+
+.bottom-box-column {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.column-content {
+  display: flex;
+  position: relative;
+  padding: 1%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+#top-left-box,
+#top-right-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+#bottom-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 0;
+  flex-direction: wrap;
+}
+
+#bottom-box-content {
+  display: inline-flex;
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+
+/*-------------------------------------------*\
+   Text
+\*-------------------------------------------*/
+.default-text {
+  color: #000;
+  font-size: 2.5em;
+  margin: 2%;
+  text-align: center;
+}
+
+.default-header-text {
+  display: flex;
+  position: relative;
+  color: #fff;
+  font-size: 3em;
+  margin: 0 2.5% 0 0;
+}
+
+.default-body-text {
+  color: #000;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.bottom-box-title {
+  display: inline-flex;
+  position: relative;
+  margin: 1%;
+  height: 10%;
+  font-size: 3em;
+  align-items: center;
+  color: #000;
+}
+
+/*-------------------------------------------*\
+   Media
+\*-------------------------------------------*/
+.default-logo {
+  height: 100%;
+  display: flex;
+}
+
+.media {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+/*-------------------------------------------*\
+   General
+\*-------------------------------------------*/
+.center {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

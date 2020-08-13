@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <base href="/public/"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="styles/root.css">
+  <link rel="stylesheet" type="text/css" href="styles/pageHeader.css">
+  <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="styles/resize.css">
+
+  <script type="text/javascript" src="scripts/universal.js"></script>
+  <script type="text/javascript" src="scripts/dashboard.js"></script>
+</head>
+
+<body>
+
+  <header id="pageHeader" class="page-header-properties">
+  </header>
+
+  <main id="pageContent">
+
+    <header id="pageTitle">
+      <h1>Dashboard</h1>
+    </header>
+
+    <div class="dashboard-options-container">
+
+      <section id="dashboardInformation" class="dashboard-options">
+
+        <div class="info-box">
+          <div class="info-internal-container">
+            <h2>Time:</h2>
+            <p id="localTime">-</p>
+          </div>
+        </div>
+
+        <div class="info-box-b">
+          <div class="info-internal-container">
+            <h2>Connected Displays:</h2>
+            <p id="numDisplays">-</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-internal-container">
+            <h2>Number of Pages:</h2>
+            <p id="numPages">-</p>
+          </div>
+        </div>
+
+        <div class="info-box-b">
+          <div class="info-internal-container">
+            <h2>Number of Styles:</h2>
+            <p id="numStyles">-</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-internal-container">
+            <h2>Number of Scripts:</h2>
+            <p id="numScripts">-</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="dashboardUtilities" class="dashboard-options">
+
+        <div id="manageFiles" class="options-box">
+          <a href="/manageFiles">
+            <div class="options-internal-container">
+              <img class="options-icon" src="images/icons/template-icon.png" alt="Create a new display template">
+              <p>Create & Manage Files</p>
+            </div>
+          </a>
+        </div>
+
+        <div id="configureDisplay" class="options-box">
+          <a href="/configureDisplay">
+            <div class="options-internal-container">
+              <img class="options-icon" src="images/icons/configure-icon.png" alt="Configure a Display on the P.U.D network">
+              <p>Configure Displays</p>
+            </div>
+          </a>
+        </div>
+
+        <div id="manageMedia" class="options-box">
+          <a href="/manageMedia">
+            <div class="options-internal-container">
+              <img class="options-icon" src="images/icons/upload-icon.png" alt="Upload media">
+              <p>Upload & Manage Media</p>
+            </div>
+          </a>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

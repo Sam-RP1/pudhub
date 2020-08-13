@@ -1,0 +1,162 @@
+/*-------------------------------------------*\
+   pageHeader.css
+
+   Page Header
+   - Header
+   - Navigation Menu
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Header
+\*-------------------------------------------*/
+.page-header-properties {
+  position: sticky;
+  display: block;
+  height: 60px;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 0.4em #444;
+  background-color: #621360;
+}
+
+.page-header-internals {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.page-header-grid {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.page-header-column-33 {
+  width: 33%;
+  float: left;
+}
+
+.menu-button {
+  padding-right: 43px;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.icon-hover {
+  cursor: pointer;
+}
+
+#logo {
+  height: 50px;
+  width: 180px;
+}
+
+/*-------------------------------------------*\
+   Navigation Menu
+\*-------------------------------------------*/
+ul {
+  list-style: none;
+}
+
+.menu-navigation {
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  top: 0;
+  left: -500px;
+  z-index: 1010;
+  overflow-x: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.menu-header {
+  height: 60px;
+  width: 100px;
+  top: 0px;
+  background-color: #621360;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  left: 33px;
+  font-size: 36px;
+  color: #FFF;
+}
+
+.menu-container {
+  height: calc(100vh - 60px);
+  margin: 0;
+  padding: 0 25px 0 25px;
+  background-color: #212121;
+}
+
+.menu-container a {
+  display: block;
+  padding: 10px 0 10px 0;
+  color: #FFF;
+  font-size: 26px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu-container a:hover {
+  color: #212121;
+  background-color: #FFF;
+  border-radius: 5px;
+  transform: scale(0.95);
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.menu-container footer {
+  display: block;
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+}
+
+.menu-container footer p {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0;
+  width: 100%;
+}
+
+.menu-items {
+  list-style: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #FFF;
+}
+
+.sub-menu {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+.sub-menu li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}

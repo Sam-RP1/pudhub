@@ -1,0 +1,145 @@
+/*-------------------------------------------*\
+   manageMedia.css
+
+   Manage Media
+   - Containers
+   - Buttons
+   - General
+   - Mouse Events
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+.media-display {
+  display: flex;
+  position: relative;
+  width: 98vw;
+  height: 67vh;
+  margin: 1vh 1vw 1vh 1vw;
+  padding: 0;
+}
+
+.media-list-window {
+  display: flex;
+  position: relative;
+  width: 96vw;
+  height: 100%;
+  margin: 1vh 1vw 1vh 1vw;
+  padding: 0;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.preview {
+  margin: 0;
+  max-width: 85vw;
+  max-height: 85vh;
+}
+
+.preview-internal-container {
+  margin-top: 60px;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 901;
+  overflow-y: auto;
+}
+
+/*-------------------------------------------*\
+   Buttons
+\*-------------------------------------------*/
+.choose-btn {
+  margin: 4vh 0 2vh 0;
+}
+
+.upload-btn {
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: none;
+  margin: 3vh 0 0 0;
+  color: #FFF;
+  background-color: #4caf50;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: none;
+  margin: 0;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  text-align: center;
+}
+
+.close-preview {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 4em;
+  color: #fff;
+}
+
+/*-------------------------------------------*\
+   General
+\*-------------------------------------------*/
+#previewImage,
+#previewVideo,
+#previewError,
+#delMediasList {
+  display: none;
+}
+
+.media-display h2 {
+  font-size: 2em;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0 0 1vh 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-bottom: 2px solid #212121;
+}
+
+.preview-error {
+  color: #000;
+  background-color: #fff;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+
+/*-------------------------------------------*\
+   Mouse Events
+\*-------------------------------------------*/
+.upload-btn:hover {
+  transform: scale(0.98);
+  background-color: #449d48;
+}

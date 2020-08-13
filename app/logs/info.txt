@@ -1,0 +1,67 @@
+2019-05-22T20:06:19.699Z: 192.168.0.2 sending request to the P.U.D network
+2019-05-22T20:06:19.707Z: 192.168.0.2 not found in database. Added 192.168.0.2 to database. Serving default presets.
+2019-05-22T20:34:28.457Z: 192.168.0.2 sending request to the P.U.D network
+2019-05-22T20:34:28.461Z: 192.168.0.2 found in database. Serving /pages/default-display.html.
+2019-05-22T20:34:28.461Z: 192.168.0.2 checked in. 
+# Current Details for 192.168.0.2
+# Name: New Display
+# File: /pages/default-display.html
+# Timer: 1
+# Last modified: 1558555579
+2019-05-23T20:08:01.444Z: 192.168.0.2 sending request to the P.U.D network
+2019-05-23T20:08:01.446Z: 192.168.0.2 found in database. Serving /pages/default-display.html.
+2019-05-23T20:08:01.446Z: 192.168.0.2 checked in. 
+# Current Details for 192.168.0.2
+# Name: New Display
+# File: /pages/default-display.html
+# Timer: 1
+# Last modified: 1558555579
+2019-05-23T20:08:29.642Z: 192.168.0.4 sending request to the P.U.D network
+2019-05-23T20:08:29.646Z: 192.168.0.4 not found in database. Added 192.168.0.4 to database. Serving default presets.
+2019-05-23T20:12:29.344Z: 192.168.0.2 properties updated.
+2019-05-23T20:13:01.701Z: 192.168.0.2 sending request to the P.U.D network
+2019-05-23T20:13:01.701Z: 192.168.0.2 found in database. Serving /pages/info-display-horizontal.html.
+2019-05-23T20:13:01.701Z: 192.168.0.2 checked in. 
+# Current Details for 192.168.0.2
+# Name: Desktop
+# File: /pages/info-display-horizontal.html
+# Timer: 2
+# Last modified: 1558642349
+2019-05-23T20:14:22.451Z: /styles/test.css created and saved to the directory /app/displays/styles.
+2019-05-23T20:15:31.103Z: /styles/test.css deleted.
+2019-05-23T20:15:49.427Z: warplogo.png uploaded to media.
+2020-08-13T11:51:51.506Z: ::1 sending request to the P.U.D network
+2020-08-13T11:51:51.513Z: ::1 not found in database. Added ::1 to database. Serving default presets.
+2020-08-13T12:11:17.636Z: /pages/default-display.html properties updated.
+2020-08-13T12:11:36.141Z: /pages/display2.html created and saved to the directory /app/displays/pages.
+2020-08-13T12:11:52.105Z: ::1 sending request to the P.U.D network
+2020-08-13T12:11:52.105Z: ::1 found in database. Serving /pages/default-display.html.
+2020-08-13T12:11:52.106Z: ::1 checked in. 
+# Current Details for ::1
+# Name: New Display
+# File: /pages/default-display.html
+# Timer: 1
+# Last modified: 1597320677
+2020-08-13T12:12:29.470Z: /pages/display2.html deleted.
+2020-08-13T12:13:39.646Z: /pages/display-new.html created and saved to the directory /app/displays/pages.
+2020-08-13T12:14:03.405Z: /pages/display-new.html properties updated.
+2020-08-13T12:33:07.316Z: ::1 properties updated.
+2020-08-13T12:33:54.098Z: ::1 sending request to the P.U.D network
+2020-08-13T12:33:54.098Z: ::1 found in database. Serving /pages/info-display-vertical.html.
+2020-08-13T12:33:54.098Z: ::1 checked in. 
+# Current Details for ::1
+# Name: Display 1 Office
+# File: /pages/info-display-vertical.html
+# Timer: 20
+# Last modified: 1597321987
+2020-08-13T14:41:43.594Z: /pages/display-new.html deleted.
+2020-08-13T14:42:59.027Z: /pages/display-new.html created and saved to the directory /app/displays/pages.
+2020-08-13T14:48:02.530Z: prp-join-class-test.gif uploaded to media.
+2020-08-13T15:58:20.712Z: ::1 sending request to the P.U.D network
+2020-08-13T15:58:20.713Z: ::1 found in database. Serving /pages/info-display-vertical.html.
+2020-08-13T15:58:20.713Z: ::1 checked in. 
+# Current Details for ::1
+# Name: Display 1 Office
+# File: /pages/info-display-vertical.html
+# Timer: 20
+# Last modified: 1597321987

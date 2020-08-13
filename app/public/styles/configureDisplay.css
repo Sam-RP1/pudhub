@@ -1,0 +1,287 @@
+/*-------------------------------------------*\
+   configureDisplay.css
+
+   Configure Display
+   - Containers
+   - Buttons
+   - General
+   - Mouse Events
+   - Drop Down
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+.display-box {
+  position: relative;
+  display: inline-flex;
+  height: auto;
+  width: 19.7vw;
+  margin: 1vh 0 1vh 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.box-internal-container {
+  display: flex;
+  width: 100%;
+  margin: auto auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  flex-wrap: wrap;
+}
+
+.icon-container {
+  width: 50%;
+  height: 75%;
+}
+
+.info-container {
+  width: 100%;
+  height: 25%;
+}
+
+.button-container {
+  width: 50%;
+  height: 75%;
+  float: left;
+}
+
+.utility-bar {
+  width: 96vw;
+  height: 17vh;
+  position: relative;
+  display: inline-flex;
+  margin: 1vh 2vw 1vh 2vw;
+  color: #621360;
+  flex-direction: column;
+}
+
+.utility-buttons {
+  width: 100%;
+  height: 33.333333333%;
+  margin: 0;
+  display: inline-flex;
+}
+
+.utility-inputs {
+  width: 100%;
+  height: 33.333333333%;
+  margin-bottom: 1vh;
+  display: inline-flex;
+}
+
+/*-------------------------------------------*\
+   Buttons
+\*-------------------------------------------*/
+.e-button {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  width: 50%;
+  border: none;
+  margin: 0;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.button {
+  float: left;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 30px;
+  min-width: 100%;
+  top: 8px;
+  border: none;
+  margin: 10px 0 10px 0;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.button-edit,
+.save-btn {
+  background-color: #4caf50;
+}
+
+.button-remove,
+.cancel-btn {
+  background-color: #d9534f;
+}
+
+/*-------------------------------------------*\
+   General
+\*-------------------------------------------*/
+#pageContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-flow: wrap;
+}
+
+#displays,
+#editDisplay {
+  width: inherit;
+  height: inherit;
+  position: inherit;
+  margin: inherit;
+}
+
+#editDisplay {
+  display: none;
+}
+
+.box-internal-container p {
+  font-size: 1em;
+  margin: 5px 0 5px 0;
+}
+
+.display-margin-right {
+  margin-right: 2%;
+}
+
+.display-details {
+  text-align: left;
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+  width: 49%;
+  font-size: 1.8em;
+  padding: 0 0 0 5px;
+  align-items: center;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+}
+
+.display-details input {
+  text-align: left;
+  width: 50%;
+  border: 0;
+  font-size: 1em;
+  margin: 0 10px 0 10px;
+}
+
+.display-icon {
+  height: 125px;
+  width: 125px;
+}
+
+.file-input {
+  width: 96vw;
+  height: 90vh;
+  margin: 1vh 2vw 2vh 2vw;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  background-color: #FFF;
+  overflow-y: scroll;
+}
+
+/*-------------------------------------------*\
+   Mouse Events
+\*-------------------------------------------*/
+.button-edit:hover,
+.save-btn:hover {
+  background-color: #449d48;
+  transform: scale(0.98);
+}
+
+.button-remove:hover,
+.cancel-btn:hover {
+  background-color: #c9302c;
+  transform: scale(0.98);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/*-------------------------------------------*\
+   Drop Down
+\*-------------------------------------------*/
+#filePath {
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  text-align: left;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 33.333333333%;
+  width: 100%;
+  margin-bottom: 1vh;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+}
+
+.dropbtn {
+  cursor: pointer;
+  width: 25%;
+  height: auto;
+  padding: 0 0 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown p {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 4.8vh;
+  text-align: right;
+  background-color: #FFF;
+  width: 40vw;
+  max-height: 40vh;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  z-index: 1;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+}
+
+.show {
+  display:block;
+}

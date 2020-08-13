@@ -1,0 +1,103 @@
+/*-------------------------------------------*\
+   root.css
+
+   Root
+   - Element Tags
+   - Containers
+   - Text
+   - General
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Element Tags
+\*-------------------------------------------*/
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(#F7F7F7, #D6D6D6);
+  width: 100vw;
+  height: 100vh;
+}
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+#pageContent {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 60px;
+  margin: 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+/*-------------------------------------------*\
+   Text
+\*-------------------------------------------*/
+#pageTitle {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  width: 96vw;
+  margin: 2vh 2vw 1vh 2vw;
+  padding: 0;
+  color: #621360;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+#pageTitle h1 {
+  font-size: 2.5em;
+  padding: 15px;
+  margin: 0;
+}
+
+.general-title {
+  font-size: 3em;
+  margin: 0;
+}
+
+/*-------------------------------------------*\
+   General
+\*-------------------------------------------*/
+.vertical-margin {
+  margin: auto auto;
+}
+
+.content-align-center {
+  text-align: center;
+}
+
+.content-align-left {
+  text-align: left;
+}
+
+.content-align-right {
+  text-align: right;
+}
+
+.display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

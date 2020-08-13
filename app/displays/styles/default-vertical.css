@@ -1,0 +1,142 @@
+/*-------------------------------------------*\
+   default-vertical.css
+
+   Default Vertical
+   - Containers
+   - Text
+   - Media
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+.default-header-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 80px;
+  top: 0;
+  align-items: center;
+  background-color: #3c023c;
+}
+
+.default-header-internal {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.default-box-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  margin: 0;
+  flex-flow: wrap;
+}
+
+.box-wrapper-small {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 35%;
+}
+
+.box-wrapper-large {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 65%;
+}
+
+.bottom-box-row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  flex-direction: row;
+}
+
+.column-content {
+  display: flex;
+  position: relative;
+  padding: 2.5%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#top-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+#bottom-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 0;
+  flex-direction: column;
+}
+
+
+.image-container,
+.content {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+/*-------------------------------------------*\
+   Text
+\*-------------------------------------------*/
+.default-header-text {
+  display: flex;
+  position: relative;
+  color: #fff;
+  font-size: 3em;
+  margin: 0 2.5% 0 0;
+}
+
+.default-body-text {
+  color: #000;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.box-title {
+  display: inline-flex;
+  position: relative;
+  margin: 2.5%;
+  height: 10%;
+  font-size: 3em;
+  align-items: center;
+  color: #000;
+}
+
+/*-------------------------------------------*\
+   Media
+\*-------------------------------------------*/
+.column-image {
+  height: 95%;
+  margin: 2.5%;
+  display: flex;
+}
+
+.media {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}

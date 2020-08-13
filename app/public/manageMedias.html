@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Media Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <base href="/public/"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="styles/root.css">
+  <link rel="stylesheet" type="text/css" href="styles/pageHeader.css">
+  <link rel="stylesheet" type="text/css" href="styles/managePages.css">
+  <link rel="stylesheet" type="text/css" href="styles/manageMedia.css">
+  <link rel="stylesheet" type="text/css" href="styles/resize.css">
+
+  <script type="text/javascript" src="scripts/universal.js"></script>
+  <script type="text/javascript" src="scripts/manageMedia.js"></script>
+</head>
+
+<body>
+
+  <header id="pageHeader" class="page-header-properties">
+  </header>
+
+  <section id="uploadFileDialog" class="dialog-container">
+    <div class="dialog-overlay"></div>
+
+    <div class="dialog-internal-container">
+      <article>
+        <header class="dialog-header">
+          <a href="javascript:void(0)" class="close-dialog" id="dialogClose">&times;</a>
+
+          <div id="dialogText" class="dialog-text">
+            <h1>Upload Files</h1>
+          </div>
+
+          <form action="/api/medias" method="post" enctype="multipart/form-data">
+            <p><input name="media" type="file" multiple="multiple" class="choose-btn"></p>
+            <p><input id="submitBtn" name="submit" type="submit" value="Upload" class="upload-btn"></p>
+          </form>
+
+        </header>
+      </article>
+    </div>
+  </section>
+
+  <section id="fileViewer" class="dialog-container">
+    <div class="dialog-overlay"></div>
+
+    <div class="preview-internal-container">
+      <article>
+        <header class="dialog-header">
+          <a href="javascript:void(0)" class="close-preview" id="fileViewerClose">&#127367;</a>
+
+          <img id="previewImage" class="preview" src="">
+
+          <video id="previewVideo" class="preview" controls></video>
+
+          <p id="previewError" class="preview-error">Sorry, the media you selected cannot be previewed.</p>
+        </header>
+      </article>
+    </div>
+  </section>
+
+  <main id="pageContent">
+
+    <header id="pageTitle">
+      <h1>Manage Media</h1>
+    </header>
+
+    <section id="fileBrowser" class="file-browser">
+
+      <section id="fileOptions" class="file-options">
+
+        <div class="button-container">
+          <button id="uploadNewFile" class="btn s-button create-btn" name="create">Upload Media</button>
+          <button id="delete" class="btn s-button delete-btn" name="delete">Delete Media</button>
+        </div>
+
+        <div id="instructionText" class="text-container">
+          <p>To use the media shown below on displays put "medias/fileNameHere.extension".</p>
+        </div>
+
+      </section>
+
+      <section id="fileDisplay" class="media-display">
+
+        <article id="medias" class="media-list-window">
+          <div class="file-type-heading">
+            <h2>Media Files:</h2>
+          </div>
+
+          <div class="file-listing">
+            <ul id="mediasList">
+            </ul>
+            <ul id="delMediasList">
+            </ul>
+          </div>
+        </article>
+
+      </section>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

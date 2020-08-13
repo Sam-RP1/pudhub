@@ -1,0 +1,297 @@
+/*-------------------------------------------*\
+   managePages.css
+
+   Manage Pages
+   - Containers
+   - Buttons
+   - General
+   - Mouse Events
+   - Dialog
+   - Form
+
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\
+   Containers
+\*-------------------------------------------*/
+.file-browser {
+  width: 100vw;
+  height: auto;
+}
+
+.file-options {
+  width: 96vw;
+  height: 10vh;
+  position: relative;
+  display: inline-flex;
+  margin: 1vh 2vw 1vh 2vw;
+  color: #621360;
+  flex-direction: column;
+}
+
+.button-container {
+  width: 100%;
+  height: 50%;
+  display: inline-flex;
+}
+
+.text-container {
+  height: 50%;
+  width: 100%;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.file-display {
+  display: flex;
+  position: relative;
+  width: 98vw;
+  height: 67vh;
+  margin: 1vh 1vw 1vh 1vw;
+  padding: 0;
+}
+
+.file-type-heading {
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 1vh 1vw 1vh 1vw;
+  color: #621360;
+  background-color: #FFF;
+  z-index: 50;
+}
+
+.file-listing {
+  position: relative;
+  display: inline-block;
+  height: 85%;
+  width: 100%;
+  margin: 0 1vw 1vh 1vw;
+  padding: 0;
+  color: #000;
+}
+
+/*-------------------------------------------*\
+   Buttons
+\*-------------------------------------------*/
+.btn {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: none;
+  margin: 0;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  text-align: center;
+}
+
+.s-button {
+  width: 50%;
+  height: 100%;
+}
+
+.create-btn {
+  background-color: #81427f;
+}
+
+.delete-btn, .cancel-btn {
+  background-color: #d9534f;
+}
+
+/*-------------------------------------------*\
+   General
+\*-------------------------------------------*/
+#pageContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-flow: wrap;
+}
+
+#fileBrowser {
+  display: block;
+}
+
+.text-container p {
+  font-size: 1.3em;
+  display: flex;
+  margin: 0;
+}
+
+.file-display h2 {
+  font-size: 2em;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0 0 1vh 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-bottom: 2px solid #212121;
+}
+
+.file-listing ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.file-listing li {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/*-------------------------------------------*\
+   Mouse Events
+\*-------------------------------------------*/
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.create-btn:hover {
+  background-color: #621360;
+}
+
+.delete-btn:hover, .cancel-btn:hover {
+  background-color: #c9302c;
+}
+
+.file-listing li:hover { background-color: #ddd }
+
+/*-------------------------------------------*\
+   Dialog
+\*-------------------------------------------*/
+.dialog-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dialog-text h1 {
+  margin: 5px;
+  font-size: 2em;
+}
+
+.dialog-text p {
+  margin: 5px;
+  font-size: 1.2em;
+}
+
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  z-index: 900;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.dialog-container article {
+  padding: 1em;
+  display: block;
+}
+
+.dialog-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 899;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dialog-internal-container {
+  position: relative;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border-width: 0px;
+  border-style: solid;
+  width: 40vw;
+  height: 35vh;
+  z-index: 901;
+}
+
+.close-dialog {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  color: #000;
+}
+
+/*-------------------------------------------*\
+   Form
+\*-------------------------------------------*/
+form {
+  margin: 1vh 2vw 1vh 2vw;
+}
+
+form p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+form input, select {
+  font-size: 1.05em;
+}
+
+.input-box {
+  display: inline-flex;
+  position: relative;
+  width: 20vw;
+  height: 20%;
+  margin: 1vh 2.5vw 1vh 2.5vw;
+  border-radius:0.2em;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+}
+
+.formButton {
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 30px 2px 30px;
+  height: auto;
+  margin: 1vh 0 1vh 0;
+  color: #FFFFFF;
+  border-radius: 0.2em;
+  cursor: pointer;
+}

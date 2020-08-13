@@ -1,0 +1,26 @@
+2019-05-22T20:06:19.707Z: 192.168.0.2 record created and inserted in to "displays" table.
+2019-05-23T20:08:29.645Z: 192.168.0.4 record created and inserted in to "displays" table.
+2019-05-23T20:12:29.344Z: 192.168.0.2 properties updated.
+# Updated Details for 192.168.0.2
+# Name: Desktop
+# File: /pages/info-display-horizontal.html
+# Timer: 2
+# Last modified: 1558642349
+2019-05-23T20:14:22.451Z: /styles/test.css record inserted in to "styles" table.
+2019-05-23T20:15:31.103Z: /styles/test.css deleted from "styles" table.
+2019-05-23T20:15:49.427Z: /medias/warplogo.png record inserted in to "medias" table.
+2020-08-13T11:51:51.513Z: ::1 record created and inserted in to "displays" table.
+2020-08-13T12:11:17.634Z: /pages/default-display.html updated in "pages" table.
+2020-08-13T12:11:36.141Z: /pages/display2.html record inserted in to "pages" table.
+2020-08-13T12:12:29.469Z: /pages/display2.html deleted from "pages" table.
+2020-08-13T12:13:39.646Z: /pages/display-new.html record inserted in to "pages" table.
+2020-08-13T12:14:03.404Z: /pages/display-new.html updated in "pages" table.
+2020-08-13T12:33:07.316Z: ::1 properties updated.
+# Updated Details for ::1
+# Name: Display 1 Office
+# File: /pages/info-display-vertical.html
+# Timer: 20
+# Last modified: 1597321987
+2020-08-13T14:41:43.592Z: /pages/display-new.html deleted from "pages" table.
+2020-08-13T14:42:59.027Z: /pages/display-new.html record inserted in to "pages" table.
+2020-08-13T14:48:02.530Z: /medias/prp-join-class-test.gif record inserted in to "medias" table.

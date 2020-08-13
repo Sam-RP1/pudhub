@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Configure Displays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <base href="/public/"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="styles/root.css">
+  <link rel="stylesheet" type="text/css" href="styles/pageHeader.css">
+  <link rel="stylesheet" type="text/css" href="styles/configureDisplay.css">
+  <link rel="stylesheet" type="text/css" href="styles/resize.css">
+
+  <script type="text/javascript" src="scripts/universal.js"></script>
+  <script type="text/javascript" src="scripts/configureDisplay.js"></script>
+</head>
+
+<body>
+
+  <header id="pageHeader" class="page-header-properties">
+  </header>
+
+  <main id="pageContent">
+
+    <header id="pageTitle">
+      <h1>Displays</h1>
+    </header>
+
+    <section id="displays">
+    </section>
+
+    <section id="editDisplay">
+
+      <section id="utilityBar" class="utility-bar">
+        <div id="textInputs" class="utility-inputs">
+          <div class="display-details display-margin-right">Display Name:
+          <input id="displayName" minlength="4" maxlength="20"></input></div>
+          <div class="display-details">Refresh Timer (min):
+          <input id="displayTimer" minlength="1" maxlength="4"></input></div>
+        </div>
+
+        <div id="dropDownContainer" class="dropdown">
+          <p id="dropDownBtn" class="dropbtn">Files ⯆: </p>
+          <p id="filePath"></p>
+          <div id="dropDownMenu" class="dropdown-content"></div>
+        </div>
+
+        <div id="utilityButtons" class="utility-buttons">
+          <button id="save" class="e-button save-btn" name="save">Save</button>
+          <button id="cancel" class="e-button cancel-btn" name="cancel">Cancel</button>
+        </div>
+      </section>
+
+      <section id="fileEditor" class="file-input">
+      </section>
+
+    </section>
+
+  </main>
+
+
+</body>
+</html>

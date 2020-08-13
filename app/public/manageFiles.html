@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>File Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <base href="/public/"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="styles/root.css">
+  <link rel="stylesheet" type="text/css" href="styles/pageHeader.css">
+  <link rel="stylesheet" type="text/css" href="styles/managePages.css">
+  <link rel="stylesheet" type="text/css" href="styles/manageFiles.css">
+  <link rel="stylesheet" type="text/css" href="styles/resize.css">
+
+  <script type="text/javascript" src="scripts/universal.js"></script>
+  <script type="text/javascript" src="scripts/manageFiles.js"></script>
+</head>
+
+<body>
+
+  <header id="pageHeader" class="page-header-properties">
+  </header>
+
+  <section id="createFileDialog" class="dialog-container">
+    <div class="dialog-overlay"></div>
+
+    <div class="dialog-internal-container">
+      <article>
+        <header class="dialog-header">
+          <a href="javascript:void(0)" class="close-dialog" id="dialogClose">&times;</a>
+
+          <div id="dialogText" class="dialog-text">
+            <h1>Create a new file</h1>
+            <p>Select a file type from the options below and enter the dersired name for the file</p>
+          </div>
+
+          <form id="createFileForm" action="" method="POST">
+            <p>File Type:
+              <select id="fileTypes" name="fileType" class="input-box">
+                <option value="pages">Page</option>
+                <option value="styles">Style</option>
+                <option value="scripts">Script</option>
+              </select>
+            </p>
+
+            <p>File Name:<input type="text" name="fileName" placeholder="File Name Here" minlength="4" maxlength="35" required class="input-box"></p>
+            <input id="createFileButton" type="submit" value="Submit" class="formButton btn submit-btn">
+            <input type="reset" value="Clear" class="formButton btn cancel-btn">
+          </form>
+
+        </header>
+      </article>
+    </div>
+  </section>
+
+  <main id="pageContent">
+
+    <header id="pageTitle">
+      <h1>Manage Files</h1>
+    </header>
+
+    <section id="fileBrowser" class="file-browser">
+
+      <section id="fileOptions" class="file-options">
+
+        <div class="button-container">
+          <button id="createNewFile" class="btn s-button create-btn" name="create">Create a file</button>
+          <button id="delete" class="btn s-button delete-btn" name="delete">Delete a file</button>
+        </div>
+
+        <div id="instructionText" class="text-container">
+          <p>To get started select a file from the menus below, from there you can then edit the file.</p>
+        </div>
+
+      </section>
+
+      <section id="fileDisplay" class="file-display">
+
+        <article id="pages" class="file-list-window">
+          <div class="file-type-heading">
+            <h2>Pages:</h2>
+          </div>
+
+          <div class="file-listing">
+            <ul id="pagesList">
+            </ul>
+            <ul id="delPagesList">
+            </ul>
+          </div>
+        </article>
+
+        <article id="styles" class="file-list-window">
+          <div class="file-type-heading">
+            <h2>Styles:</h2>
+          </div>
+
+          <div class="file-listing">
+            <ul id="stylesList">
+            </ul>
+            <ul id="delStylesList">
+            </ul>
+          </div>
+        </article>
+
+        <article id="scripts" class="file-list-window">
+          <div class="file-type-heading">
+            <h2>Scripts:</h2>
+          </div>
+
+          <div class="file-listing">
+            <ul id="scriptsList">
+            </ul>
+            <ul id="delScriptsList">
+            </ul>
+          </div>
+        </article>
+
+      </section>
+
+    </section>
+
+    <section id="fileEditing" class="file-editing">
+
+      <section id="fileOptions" class="file-options">
+
+        <div class="button-container">
+          <button id="save" class="btn s-button save-btn" name="save">Save</button>
+          <button id="cancelBtn" class="btn s-button cancel-btn" name="cancel">Cancel</button>
+        </div>
+
+        <div class="text-container">
+          <p>Use the window below to edit and configure the file. The buttons above can be used to save the file or cancel back to the file browser.</p>
+        </div>
+
+      </section>
+
+      <section id="fileEditor" class="file-editor">
+      </section>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
