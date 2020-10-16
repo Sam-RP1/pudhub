@@ -1,6 +1,6 @@
 # Portsmouth Unattended Displays
 
-Welcome to the README for the Portsmouth Unattended Displays application, also known as P.U.D Hub. This application was developed to allow the creation, customisation and management of a vast network of unattended displays. All from one hub.
+Welcome to the README for the Portsmouth Unattended Displays application, also known as P.U.D Hub. This application was developed in my second year of univeristy (2018) as a coursework submission. The purpose of P.U.D Hub is to allow the creation, customisation and management of a vast network of unattended displays. All from one hub.
 
 
 ## Contents
